@@ -101,7 +101,7 @@ carla_gym/
   env_configs/          Environment configs
   planning/config/      Agent configs (PPO, LSTM, etc.)
   gym_carla/            CARLA Gym environment
-  planning/safe_rl/     RL algorithms and workers
+  planning/rl/     RL algorithms and workers
 
 run.py                  Main training entry point
 requirements.txt        Dependencies
