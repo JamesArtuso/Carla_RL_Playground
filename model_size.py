@@ -1,13 +1,13 @@
 import gym
 import gym_carla
 import carla
-from planning.safe_rl.policy.ppo import PPOLagrangian as PPO_MLP
-from planning.safe_rl.policy.ppo_lstm import PPOLagrangian as PPO_lstm
+from planning.rl.policy.ppo import PPOLagrangian as PPO_MLP
+from planning.rl.policy.ppo_lstm import PPOLagrangian as PPO_lstm
 from planning.rl.util.run_util import load_config
 import os.path as osp
-from util.torch_util import set_seed, set_torch_variable
+from planning.rl.util.torch_util import set_torch_variable
 import torch 
-from planning.safe_rl.util.logger import EpochLogger
+from planning.rl.util.logger import EpochLogger
 
 def print_model_info(name, model):
     total_params = sum(p.numel() for p in model.parameters())
